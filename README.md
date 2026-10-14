@@ -340,4 +340,4 @@ The project report contains the complete reference list and literature review us
 
 ---
 
-⭐ If you find this project useful, consider giving the repository a star.
+If you find this project useful, consider giving the repository a star.
