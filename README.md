@@ -1,9 +1,9 @@
-# 🏠 IoT-Based Smart Room Hub
+# IoT-Based Smart Room Hub
 
 An IoT-based smart room automation system using **ESP8266 NodeMCU** for continuous presence detection, environmental monitoring, relay-based control, and local status visualization.
 
 
-## 📌 Overview
+## Overview
 
 The **IoT-Based Smart Room Hub** is a low-cost embedded automation prototype designed to improve upon conventional motion-based room automation systems.
 
@@ -11,21 +11,21 @@ The system uses an **IR obstacle sensor** for continuous presence detection, a *
 
 The ESP8266 NodeMCU acts as the central controller and provides built-in Wi-Fi connectivity for future remote monitoring and cloud integration.
 
-## ✨ Features
+## Features
 
-* 🔍 Continuous presence detection using an IR obstacle sensor
-* ⏱️ Configurable 10-second presence timeout
-* 🌡️ Real-time temperature monitoring
-* 💧 Real-time humidity monitoring
-* 💡 Four LED status indicators
-* 🔌 Relay-based output control
-* 📟 16×2 I2C LCD status display
-* 📶 ESP8266 Wi-Fi connectivity
-* ⚡ Occupancy-conditional temperature control
-* 🛡️ Active-LOW relay control with safe initial OFF state
-* 🔧 Expandable architecture for cloud and multi-room integration
+* Continuous presence detection using an IR obstacle sensor
+* Configurable 10-second presence timeout
+* Real-time temperature monitoring
+* Real-time humidity monitoring
+* Four LED status indicators
+* Relay-based output control
+* 16×2 I2C LCD status display
+* ESP8266 Wi-Fi connectivity
+* Occupancy-conditional temperature control
+* Active-LOW relay control with safe initial OFF state
+* Expandable architecture for cloud and multi-room integration
 
-## 🧠 How It Works
+## How It Works
 
 The system follows the data flow:
 
@@ -64,7 +64,7 @@ When nobody is present, both temperature indicators remain OFF.
 
 This hierarchical control prevents unnecessary temperature-related relay activation in an unoccupied room.
 
-## 🏗️ System Architecture
+## System Architecture
 
 ### Main Subsystems
 
@@ -92,7 +92,7 @@ This hierarchical control prevents unnecessary temperature-related relay activat
    * ESP8266 Wi-Fi
    * ESP8266WebServer framework
 
-## 🔌 Hardware Components
+## Hardware Components
 
 | Component                 | Quantity | Purpose                |
 | ------------------------- | -------: | ---------------------- |
@@ -109,7 +109,7 @@ This hierarchical control prevents unnecessary temperature-related relay activat
 | Breadboard                |        1 | Circuit assembly       |
 | Jumper Wires              |    25–30 | Wiring                 |
 
-## 📍 GPIO Pin Mapping
+## GPIO Pin Mapping
 
 | Function          | NodeMCU |   GPIO | Component   |
 | ----------------- | ------- | -----: | ----------- |
@@ -122,7 +122,7 @@ This hierarchical control prevents unnecessary temperature-related relay activat
 | Temperature RED   | D7      | GPIO13 | Relay 2 CH1 |
 | Temperature GREEN | D0      | GPIO16 | Relay 2 CH2 |
 
-## 💻 Software Requirements
+## Software Requirements
 
 * Arduino IDE
 * ESP8266 Board Package
@@ -132,7 +132,7 @@ This hierarchical control prevents unnecessary temperature-related relay activat
 * LiquidCrystal_I2C
 * Wire
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -203,7 +203,7 @@ Open Serial Monitor at:
 
 to verify initialization and Wi-Fi connection.
 
-## 📟 LCD Output
+## LCD Output
 
 The LCD displays environmental and occupancy information.
 
@@ -214,7 +214,7 @@ T:23.5C H:65%
 Person:Yes
 ```
 
-## 🧪 Testing
+## Testing
 
 The system was functionally tested across its major subsystems.
 
@@ -240,7 +240,7 @@ Temperature indicators were activated only when occupancy was detected.
 
 The system operated continuously for approximately **two hours** without spontaneous reboot, LCD corruption, invalid sensor readings, or relay-state errors.
 
-## 📊 Results
+## Results
 
 The prototype successfully demonstrated:
 
@@ -252,7 +252,7 @@ The prototype successfully demonstrated:
 * Wi-Fi connectivity
 * Stable continuous operation
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### LCD is blank
 
@@ -284,7 +284,7 @@ The prototype successfully demonstrated:
 * Verify SSID and password
 * Ensure the network provides 2.4 GHz connectivity
 
-## 🔮 Future Work
+## Future Work
 
 Planned improvements include:
 
@@ -300,7 +300,7 @@ Planned improvements include:
 * RTC-based scheduling
 * Custom PCB implementation
 
-## 🌱 Sustainable Development
+## Sustainable Development
 
 The project contributes to:
 
@@ -310,7 +310,7 @@ The project contributes to:
 
 The occupancy-conditional control strategy is intended to reduce unnecessary operation in unoccupied spaces.
 
-## 👥 Team
+## Team
 
 * **Aryan Krisna**
 * **Ohm Shrivastava**
@@ -318,7 +318,7 @@ The occupancy-conditional control strategy is intended to reduce unnecessary ope
 * **Haripirthwin VS**
 * **Nishanth Kumar S**
 
-## 🎓 Institution
+## Institution
 
 **Vellore Institute of Technology, Chennai**
 
@@ -326,7 +326,7 @@ School of Computer Science and Engineering (SCOPE)
 
 B.Tech Computer Science and Engineering with Artificial Intelligence and Machine Learning
 
-## 📄 Project Report
+## Project Report
 
 The complete project report is available in:
 
@@ -334,7 +334,7 @@ The complete project report is available in:
 docs/project-report.pdf
 ```
 
-## 📚 References
+## References
 
 The project report contains the complete reference list and literature review used for the project.
 
